@@ -1,0 +1,16 @@
+{
+  "name": "spring-petclinic",
+  "version": "4.2.5-SNAPSHOT",
+  "description": "Front-end dependencies for Spring Petclinic",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.0.3",
+    "jquery-ui": "^1.10.3"
+  },
+  "scripts": {
+    "postinstall": "mkdir -p src/main/webapp/vendors && cp -r node_modules/bootstrap/dist/* src/main/webapp/vendors/bootstrap && cp -r node_modules/jquery/dist/* src/main/webapp/vendors/jquery && cp -r node_modules/jquery-ui/* src/main/webapp/vendors/jquery-ui"
+  },
+  "author": "",
+  "license": "Apache-2.0"
+}
